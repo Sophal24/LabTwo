@@ -1,5 +1,6 @@
 <?php
 	echo "Exercise 1";
+	echo "<br>";
 
 	// Find min max number in array
 	
@@ -8,7 +9,7 @@
 		$min = $number[0];
 
 
-		for ($i=0; $i < 10 ; $i++) { 
+		for ($i=0; $i < 7 ; $i++) { 
 			
 			if ($max < $number[$i]) {
 				$max = $number[$i];
