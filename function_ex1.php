@@ -1,5 +1,6 @@
 <?php
-	date_default_timezone_set("Cambodia");
-echo "The time is " . date("h:i:s");
+
+	echo "Exercise 1 of FUNCION and RECURSION";
+	echo "<br>";
 	
 ?>
