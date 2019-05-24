@@ -1,5 +1,5 @@
 <?php
-	echo "Exercise 1 of FUNCION and RECURSION";
-	echo "<br>";
+	date_default_timezone_set("Cambodia");
+echo "The time is " . date("h:i:s");
 	
 ?>
