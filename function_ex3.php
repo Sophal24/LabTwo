@@ -4,7 +4,7 @@
 	
 	echo "ax + by + c";
 	$a = 1;
-	$b = 2;
+	$b = 1;
 	$c = 1;
 	$x1 = 0;
 	$x2 = 0;
@@ -17,8 +17,10 @@
 		$x1 = (-$b + sqrt($delta))/2*$a; 
 		$x2 = (-$b - sqrt($delta))/2*$a; 
 	}
-	else{
-		echo "There is no root";
+	else if($delta < 0){
+		$delta = -1 * $delta;
+		$x1 = ((-$b + sqrt($delta))/2*$a)."i";
+		$x2 = ((-$b - sqrt($delta))/2*$a)."i";
 	}
 	echo "<br>";
 	echo "x1 = $x1";
