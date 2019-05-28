@@ -1,12 +1,14 @@
 <?php
 	echo "Exercise 5";
 	echo "<br>";
-	$a = array("a","b","c","d","e","f","g","h","i");
-	$b = array("j","k","l","m","n","p","x","y","z");
-	$c = array();
-	for ($i=0; $i <sizeof($a) ; $i++) { 
-		$c[$i] = $a[$i]."+".$b[$i];
-		echo "$c[$i]";
-		echo "<br>";
-	}	
+	$a = array(array("a","b","c"),array("d","e","f"),array("g","h","i"));
+	$b = array(array("j","k","l"),array("m","n","o"),array("p","q","r"));
+	$result = array(array(),array(),array());
+	for($r = 0; $r < sizeof($a); $r++){
+		for($c = 0;$c <sizeof($b);$c++){
+			$result[$r][$c] = $a[$r][$c]."+".$b[$r][$c];
+		}
+	}
+	print_r($result)
+
 ?>
