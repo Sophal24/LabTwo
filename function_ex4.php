@@ -35,10 +35,13 @@
 	<hr style="height: 5px;background-color: black;">
 
 	<?php
-		$start1 = microtime(true)*1000;
+		
 
+		// This is the value that php take from input field ---
 		$number = $_POST['value'];
-		// $number = 7;
+
+		// display Recursion from Function
+		$start1 = microtime(true)*1000;
 		echo "--- Recursion ---"."<br>";
 		echo "Fibonacci of number ".$number." is  : ";
 		echo fibonacci1($number);
@@ -48,8 +51,9 @@
 		echo "Estimated time (RECURSION) : ";	
 		echo $end1 - $start1;
 
+		// -----------------------------------------
 		echo "<br><br>";
-
+		// display FOR Loop from Function
 		$start2 = microtime(true)*1000;
 		echo "<br>"."--- FOR Loop ---"."<br>";
 		echo "Fibonacci of number ".$number." is  : ";
@@ -88,10 +92,6 @@
 		    }
 		    return $a;
 		}
-
-		// echo "<br>";
-		// echo round(microtime(true)*1000);
-
 
 		
 	?>
