@@ -97,7 +97,7 @@
 	?>
 
 	<hr style="height: 3px;background-color: green;">
-	<p>Time Comparison : </p>
+	<h2 style="color: lightblue;">Time Comparison : </h2>
 	<p>Due to the 5 10 15 test to run the program : The one which is better is = <b>FOR Loop</b></p>
 
 </body>
