@@ -1,25 +1,49 @@
-<?php
-	echo "Exercise 2 of FUNCION and RECURSION";
-	echo "<br>";
-	echo "<br>";
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cyclinder</title>
+</head>
+<body>
+	<h2>Exercise 2 of FUNCION and RECURSION</h2>
+	<form action="" method="post">
+		<table>
+			<tr>
+				<td>Set Radius : </td>
+				<td><input type="number" name="radius"></td>
+			</tr>
+			<tr>
+				<td>Set Height : </td>
+				<td><input type="number" name="height"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="Submit"></td>
+			</tr>
+		</table>
+		
+	</form>
 	
 
-	function surfaceCyclinder($radius,$height){
+	<?php
 
-		$Area = (2*pi()*$radius*$height) + (2*pi()*$radius*$radius);
+		$getRadius = $_POST['radius'];
+		$getHeight = $_POST['height'];
 
-		echo "$Area";
-	}
+		function surfaceCyclinder($radius,$height){
 
-	$r = 3;
-	$h = 4;
-	echo "Rarius : ".$r."<br>";
-	echo "Height : ".$h."<br>";
+			$Area = (2*pi()*$radius*$height) + (2*pi()*$radius*$radius);
 
-	echo "<h2>Surface of Cyclinder : </h2>";
-	// echo "<br>";
+			echo "$Area";
+		}
 
-	surfaceCyclinder($r,$h);
-	
-?>
+		echo "<h2>Surface of Cyclinder : </h2>";
+		// echo "<br>";
+
+		surfaceCyclinder($getRadius,$getHeight);
+		
+	?>
+
+</body>
+</html>
+
+
+
