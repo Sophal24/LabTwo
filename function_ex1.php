@@ -1,7 +1,41 @@
 <?php
 
-	echo "Exercise 1 of FUNCION and RECURSION";
-	echo "<br>";
+	
+
+
+
+	/*if($hour <= 11 && $format == "AM"){
+		if($hour == 12 && $format == "AM"){
+			echo "Good Morning";
+		}
+		else if($minute >= 0 && $minute <= 59 && $second >= 0 && $second <= 59 && $format == "AM"){
+			echo "Good Morning";
+		}
+		else{
+			echo "Good Morning";
+		}
+		
+	}
+	else if($hour >= 1 && $hour <= 6 && $format == "PM"){
+		if($hour == 12 || $hour == 1){
+			if($format == "PM"){
+				echo "Good Afternoon";
+			}
+			
+		}
+		else{
+			echo "Good Afternoon";
+		}
+	}
+	else if($hour > 6 && $hour <= 11 && $format == "PM") { 
+		if($minute >= 0 && $minute <= 59 && $second >= 0 && $second <= 59 && $format == "PM"){
+			echo "Good Evening";
+		}
+	}*/
+
+
+
+
 
 	
 
@@ -27,5 +61,5 @@
 	    
 	    echo "<h1 style='text-align: center;color: blue;'>Good Evening</h1>";
 	}
-	
+
 ?>
